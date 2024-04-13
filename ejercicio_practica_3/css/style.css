@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+header {
+    background-color: #2a2a2a;
+    padding-top: 10px;
+}
+
+header > nav > ul {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.interactable {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    transition: all ease-out 250ms;    
+}
+
+.interactable:hover {
+    padding: 10px;
+    border-bottom: 3px solid #c23469;
+}
+
+.avatar {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    transition: all ease-out 250ms;
+}
+
+.avatar:hover {
+    padding: 10px;
+    transform: translateY(10px);    
+}
+
+main {
+    flex: 1;
+    overflow: auto;
+    margin-top: 40px;
+}
+
+.pantalla-1,
+.pantalla-2 {
+    min-width: 400px;
+    height: 100vh;
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pantalla-1 img,
+.pantalla-2 img {
+    width: 350px;    
+}
+
+.pantalla-1 h1,
+.pantalla-2 h2 {
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 900;
+    color: #fff;
+}
+
+.pantalla-1 h3 {
+    color: #fff;
+    font-weight: 300;
+}
+
+.pantalla-2 {
+    background-color: rgb(25, 25, 78);
+    height: fit-content;
+}
+
+.pantalla-2 img {
+    margin-top: 30px;
+}
+
+.pantalla-3 {
+    min-width: 400px;
+    height: 150vh;
+    background-color: rgb(25, 25, 78);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;    
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;     
+    color: #fff;
+    padding-bottom: 50px;    
+}
+
+@media screen and (min-width: 800px) {
+    .pantalla-2 {        
+        height: 100vh;
+        background-color: rgb(25, 25, 78);
+        display: flex;
+        flex-direction: row;        
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .pantalla-2 h2 {
+        display: none;
+    }
+
+    .pantalla-2 img {
+        width: 300px;
+    }    
+}
