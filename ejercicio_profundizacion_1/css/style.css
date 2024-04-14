@@ -2,6 +2,7 @@
     --text-one: #4e4e4e;
     --text-two: #ffffff;
     --bg-one: #2a2a2a;
+    --bg-two: #2d2c2cfb;
 }
 
 * {
@@ -33,8 +34,8 @@ header > nav > ul {
 }
 
 .container {    
-    background-color: var(--bg-one);
-    background-image: url("https://wall.alphacoders.com/big.php?i=278411");
+    background-color: var(--bg-two);
+    background-image: url("../fondo.jpg");
     background-size: 85vw;
     background-repeat: no-repeat;
     background-position: center;    
@@ -113,7 +114,6 @@ header > nav > ul {
     background-color: rgba(216, 194, 67, 0.728);
     color: rgba(255, 228, 196, 0.694);
 }
-
 
 footer {
     background-color: var(--bg-one);
